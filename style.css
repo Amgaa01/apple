@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  font-family: "Arial Narrow", Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: rgb(29, 29, 31);
+  padding: 10px;
+  position: relative;
+}
+.navbar-items {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-items img {
+  width: 20px;
+  filter: invert();
+}
+.navbar-items a {
+  font-size: 14px;
+  color: rgb(226, 226, 226);
+  text-decoration: none;
+}
+.navbar-items a:hover {
+  color: rgb(255, 255, 255);
+}
+.logo {
+  width: 40px;
+}
+
+.navbar-items .hover {
+  position: absolute;
+  left: 0;
+  top: -1000px;
+  width: 100%;
+  background-color: rgb(29, 29, 31);
+  z-index: -99;
+  padding: 20px 0px;
+  transition: all 1s;
+  transition-delay: 100ms;
+}
+
+.navbar-items:hover .hover {
+  top: 40px;
+}
+.hover {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.hover-content {
+  width: 80%;
+  display: flex;
+  gap: 50px;
+}
+
+.hover-main {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.hover-main h4 {
+  color: rgb(198, 198, 198);
+  font-size: 14px;
+}
+
+.hover-main-title {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hover-title {
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
